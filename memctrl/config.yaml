@@ -1,0 +1,22 @@
+# MemCtrl Configuration
+
+# Memory budgets (GB)
+tier0_budget_gb: 4.0
+tier1_budget_gb: 4.0
+tier2_budget_gb: .inf
+
+# Model paths
+llm_model: "meta-llama/Llama-2-7b-chat-hf"
+embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+
+# Control mode: automatic, hybrid, manual
+control_mode: "hybrid"
+
+# Memory management
+compression_ratio: 4.0
+eviction_threshold: 0.9
+importance_threshold: 0.5
+
+# Token limits
+max_tokens_per_chunk: 512
+max_context_tokens: 4096
